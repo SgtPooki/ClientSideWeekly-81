@@ -1,0 +1,18 @@
+{
+  "name": "rdempsey-clientside-81",
+  "version": "0.0.1",
+  "description": "A solution for the client-side challenge #81",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russell Dempsey <SgtPooki@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "glob": "^5.0.14",
+    "gulp": "^3.9.0",
+    "gulp-bytediff": "^0.2.1",
+    "gulp-jscrush": "^1.0.0",
+    "gulp-micro": "^1.0.2"
+  }
+}
