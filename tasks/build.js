@@ -3,7 +3,7 @@
 */
 
 module.exports = {
-    dependencies: [],
+    dependencies: ['html', 'js1k'],
     task: function (gulp) {
     }
 };

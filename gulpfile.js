@@ -24,7 +24,12 @@ gulpTaskPaths.forEach(function (filePath) {
 
     gulp.task(taskName, gulpTask.dependencies, function (cb) {
         //immediately prior to task start
-        gulpTask.task(gulp)
-            .on('end', cb);
+        var gulpStream = gulpTask.task(gulp);
+
+        if (gulpStream) {
+            gulpStream.on('end', cb);
+        } else {
+            cb();
+        }
     });
 });
