@@ -5,11 +5,19 @@
 var bytediff = require('gulp-bytediff');
 var jscrush = require('gulp-jscrush');
 var micro = require('gulp-micro');
+var closureCompiler = require('gulp-closure-compiler');
 
 module.exports = {
     dependencies: [],
     task: function (gulp) {
 		return gulp.src('src/js/index.js')
+			.pipe(bytediff.start())
+			.pipe(bytediff.stop())
+            .pipe(closureCompiler({
+                compilerPath: 'compiler.jar',
+                compilation_level: 'ADVANCED_OPTIMIZATIONS',
+                fileName: 'index.js'
+            }))
 			.pipe(bytediff.start())
 	        .pipe(jscrush())
 			.pipe(bytediff.stop())

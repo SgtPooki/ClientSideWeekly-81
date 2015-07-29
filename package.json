@@ -12,6 +12,7 @@
     "glob": "^5.0.14",
     "gulp": "^3.9.0",
     "gulp-bytediff": "^0.2.1",
+    "gulp-closure-compiler": "^0.3.0",
     "gulp-htmlmin": "^1.1.3",
     "gulp-jscrush": "^1.0.0",
     "gulp-micro": "^1.0.2"
