@@ -9,6 +9,7 @@
   "author": "Russell Dempsey <SgtPooki@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.8.1",
     "glob": "^5.0.14",
     "gulp": "^3.9.0",
     "gulp-bytediff": "^0.2.1",

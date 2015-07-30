@@ -1,3 +1,4 @@
+var clockFace = document.querySelector('.clockFace');
 var debugEl = document.querySelector('.debug');
 var handHour = document.querySelector('.hand-hour');
 var handMinute = document.querySelector('.hand-minute');
